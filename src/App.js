@@ -1,11 +1,21 @@
 import React from 'react';
-import Card from './components/Card'; 
+import Card from './components/Card';
+import ScoreBoard from './components/ScoreBoard';
+import useGameLogic from './hooks/useGameLogic';
 
 function App() {
+  const {
+    cards,
+    handleCardClick,
+    score,
+    bestScore
+  } = useGameLogic();
+
   return (
     <div className="App">
-    <Card /> {/* Card bileşenini burada kullanın */}
-  </div>
+      <ScoreBoard score={score} bestScore={bestScore} />
+      <Card cards={cards} handleCardClick={handleCardClick} />
+    </div>
   );
 }
 
