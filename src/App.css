@@ -1,0 +1,21 @@
+body{
+    background-color: #fffbe5;
+}
+
+
+.App-header {
+    text-align: center;
+    margin-bottom: 20px; 
+  }
+  
+  .App-header h1 {
+    margin: 0;
+    color:#ECD24E;
+    font-size: 2em; 
+  }
+  
+  .App-header p {
+    color: #BAB0A9; 
+    margin-top: 10px; 
+  }
+  
