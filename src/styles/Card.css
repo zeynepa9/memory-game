@@ -1,0 +1,47 @@
+/* Büyük ekranlar için varsayılan stil */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Büyük ekranlarda beş sütun */
+    grid-gap: 5px;
+    padding: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  /* Ekran genişliği 900px'den küçük olduğunda */
+  @media (max-width: 900px) {
+    .card-container {
+      grid-template-columns: repeat(3, 1fr); /* Orta ekranlarda üç sütun */
+    }
+  }
+  
+  /* Ekran genişliği 600px'den küçük olduğunda */
+  @media (max-width: 600px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr); /* Küçük ekranlarda iki sütun */
+    }
+    
+    .card img {
+      width: 80%; /* Resimleri büyüt */
+      height: auto;
+    }
+  }
+  
+  .card {
+    background: rgba(254, 255, 246, 0.8);
+    border: 1px solid rgba(221, 221, 221, 0.5);
+    border-radius: 5px;
+    padding: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card img {
+    width: 50%; /* Büyük ekranlarda resim boyutu */
+    height: 50%;
+    border-radius: 5px;
+  }
+  
