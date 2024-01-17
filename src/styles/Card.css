@@ -1,28 +1,28 @@
-/* Büyük ekranlar için varsayılan stil */
+
 .card-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Büyük ekranlarda beş sütun */
+    grid-template-columns: repeat(5, 1fr); 
     grid-gap: 5px;
     padding: 5px;
     justify-items: center;
     align-items: center;
   }
   
-  /* Ekran genişliği 900px'den küçük olduğunda */
+  /* when screen size is less than 900 */
   @media (max-width: 900px) {
     .card-container {
-      grid-template-columns: repeat(3, 1fr); /* Orta ekranlarda üç sütun */
+      grid-template-columns: repeat(3, 1fr); /* 3 column for middle screen */
     }
   }
   
-  /* Ekran genişliği 600px'den küçük olduğunda */
+  /* when screen size is less than 600 */
   @media (max-width: 600px) {
     .card-container {
-      grid-template-columns: repeat(2, 1fr); /* Küçük ekranlarda iki sütun */
+      grid-template-columns: repeat(2, 1fr); /* 2 column on small screens */
     }
     
     .card img {
-      width: 80%; /* Resimleri büyüt */
+      width: 80%; 
       height: auto;
     }
   }
@@ -40,10 +40,10 @@
   }
   
   .card img {
-    width: 50%; /* Büyük ekranlarda resim boyutu */
+    width: 50%; 
     height: 50%;
     border-radius: 5px;
   }
   
 
-  
+

@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/Card.css'; 
 
 const Card = ({ cards, handleCardClick }) => {
+    
     const getImagePath = (cardName) => {
         const nameParts = cardName.toLowerCase().split(' ');
         const fileName = nameParts.join('') + '.jpeg';

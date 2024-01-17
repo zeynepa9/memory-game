@@ -1,7 +1,30 @@
+
 body{
     background-color: #fffbe5;
 }
 
+/* Global font styles */
+:root {
+    --primary-font:  'Caveat';
+    --secondary-font: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+  }
+  
+  /* Tüm HTML elementleri için bu fontları uygula */
+  html {
+    font-family: var(--primary-font);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-normal);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--secondary-font);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  
 
 .App-header {
     text-align: center;
@@ -11,11 +34,13 @@ body{
   .App-header h1 {
     margin: 0;
     color:#ECD24E;
-    font-size: 2em; 
+    font-size: 2.2em; 
+    font-family: 'Caveat';
   }
   
   .App-header p {
     color: #BAB0A9; 
     margin-top: 10px; 
+    font-size: 1.2em;
   }
   

@@ -1,11 +1,13 @@
 import { useState, useEffect, useCallback } from 'react';
 import { getRandomCards } from '../utils/api';
 
+
 const useGameLogic = () => {
     const [cards, setCards] = useState([]);
     const [selectedCards, setSelectedCards] = useState([]);
     const [score, setScore] = useState(0);
     const [bestScore, setBestScore] = useState(0);
+    const [isGameOver, setIsGameOver] = useState(false);
 
     useEffect(() => {
         // load best score from local storage
@@ -51,6 +53,7 @@ const useGameLogic = () => {
         if (selectedCards.includes(cardName)) {
             setScore(0);
             setSelectedCards([]);
+            setIsGameOver(true); // update the state that will show the modal
         } else {
             setSelectedCards(prevSelected => [...prevSelected, cardName]);
             setScore(prevScore => {
@@ -66,7 +69,9 @@ const useGameLogic = () => {
         cards,
         score,
         bestScore,
-        handleCardClick
+        handleCardClick,
+        isGameOver,
+        setIsGameOver
     };
 };
 
