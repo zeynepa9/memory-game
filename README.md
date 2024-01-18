@@ -2,7 +2,8 @@
 
 ![Memory Game Screenshot](./public/ss.png)
 
-This memory game is a fun and engaging way to test your memory. The game is built with React and uses Tarot cards as the theme. Each round, players click on a card to reveal its image and must remember the position of each card to match pairs.
+This memory game is an entertaining and engaging way to test your memory skills. Built with React, the game features a Tarot card theme. In each round, players select cards and must remember the ones they have already chosen. The game ends if the same card is selected more than once.
+
 
 ## Live Demo
 
