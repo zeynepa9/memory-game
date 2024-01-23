@@ -47,15 +47,7 @@ The development of this memory game was instrumental in enhancing my understandi
 This project has been a significant step in my journey to mastering React and modern JavaScript, and I'm looking forward to applying these concepts to future projects.
 
 
-## Local Development
 
-To run this project locally, clone the repository and install the dependencies:
-
-```bash
-git clone https://github.com/YOUR_GITHUB/YOUR_PROJECT.git
-cd YOUR_PROJECT
-npm install
-npm start
 
 
 
